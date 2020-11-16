@@ -1,0 +1,42 @@
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    .container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+h2 {
+    margin-left: 5%;
+    font-family: $plex-sans;
+    font-size: 36px;
+    color: $dark-text;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+}
+.btn {
+    width: 288px;
+    height: 48px;
+    background-color: $btn-color;
+    font-family: $plex-mono;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    border: none;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+    &:hover {
+        background-image: linear-gradient(to right, $btn-color-grad-light, $btn-color-grad-dark);
+
+    }
+}

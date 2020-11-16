@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
+// How to call the fonts: 
+// font-family: 'IBM Plex Mono', monospace;
+// font-family: 'IBM Plex Sans', sans-serif;
+
+$plex-mono: 'IBM Plex Mono', monospace;
+$plex-sans: 'IBM Plex Sans', sans-serif;
+
+// Colors
+$dark-text: #060a24;
+$dark-text-grayed-out: #060a2456;
+$light-text: #FFFFFF;
+
+$menu-color: #0000EC;
+
+$btn-color: #00F3BB;
+$btn-color-grad-light: #00F0B8;
+$btn-color-grad-dark: #0000FE;
+
+$gradient-color-lighter:#0000FF;
+$gradient-color-darker: #0000A3;

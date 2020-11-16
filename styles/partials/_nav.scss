@@ -1,0 +1,116 @@
+@import '../variables_mixings/colors-and-fonts';
+
+.main-nav {
+    width: 100%;
+    position: absolute;
+    min-height: 40px;
+    .logo {
+        margin: 10px 16px;
+        width: 24px;
+        height: 24px;
+    }
+    .menu-icon {
+        cursor: pointer; 
+        padding: 22px 19px;
+        position: relative;
+        float: right;
+    }
+    /* hide the actual checkbox input */
+    #menu-btn {
+        display: none;
+    }
+    /* styling and positioning span & pseudoelements of the span */
+    .menu-icon .navicon:before, .menu-icon .navicon:after, 
+    .menu-icon .navicon {
+        background: $dark-text;
+        content: '';
+        width: 18px;
+        height: 2px;
+        display: block;
+        position: relative;
+        transition: all .25s ease-out;
+    }
+            /* positioning the span's :before&:after */
+    .menu-icon .navicon:before {
+        position: absolute;
+        top: -5px;
+    }
+    .menu-icon .navicon:after {
+        position: absolute;
+        top: 5px;
+    }
+
+        /* Animation for the menu button */
+    #menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+    #menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    #menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    /* show/hide menu and styles*/
+    .menu {
+        overflow: hidden;
+        max-height: 0px;
+        list-style: none;
+        transition: max-height .2s ease-out;
+        display: block;
+        background-color: $menu-color;
+            li {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $light-text;
+                    font-family: $plex-mono;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    padding: 16px;
+                }
+            }
+    }
+    #menu-btn:checked ~ .menu {
+    max-height: 240px;
+    }
+}
+
+@media screen and (min-width: 960px) {    
+    .main-nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            margin-left: 100px;
+            width: 36px;
+            height: 36px;
+        }
+        .menu-icon {
+            display: none;
+        }
+        #menu-btn:checked ~ .menu, #menu-btn:not(:checked) ~ .menu {
+            max-height: unset;
+            background-color: unset;
+            margin-right: 100px;
+            display: flex;
+            li {
+                a {
+                    padding: 20px 30px;
+                    color: $dark-text;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: line-through;
+                        color: $btn-color;
+                    }
+                    &:active {
+                        text-decoration: line-through;
+                        color: $dark-text-grayed-out;
+                    }
+                }
+            }
+        }
+    }
+}

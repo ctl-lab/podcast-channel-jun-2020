@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Dot - Emiliano Mainero</title>
+    <script src="https://use.fontawesome.com/401253d373.js"></script>
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+    <nav class="main-nav">
+        <img class="logo" src="images/logo.svg">
+        <input type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#episodios">Episodios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#entrevistas">Entrevistas</a></li>
+          <li><a href="#topicos">Tópicos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="main-header">
+            <h1 lang="en" class="hello">Hello <span class="world">world</span> pale blue dot<span id="dot">.</span></h1>
+            <p class="special-text"></p>
+            <input onClick="window.location.href='#nosotros'" class="btn" type="button" value="CONOCÉ MÁS">
+        </header>
+        <section class="episodes" id="episodios">
+            <h2>Episodios</h2>
+            <div class="iframe-container">
+                <iframe src="https://open.spotify.com/embed-podcast/episode/4OtIwzqdKP4z1nnzzHXw8E" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1AagOUaDK2lHtvlOwmxuyb" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6sZMcUxF3V87TCDNm1AvoG" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/130LGf1m3Rbt4zKHmWbErg" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+        <section class="nosotros" id="nosotros">
+            <img src="images/phone.png" title="Telefono mostrando periódico" alt="telefono moderno exibiendo en pantalla una foto en blanco y negro con un título de perdiódico. En la foto: una mujer con una vieja computadora. El título: 'The secret history of Women in coding'">
+            <div class="de-donde-venimos">
+                <h2>De dónde venimos</h2>
+                <p lang="en">
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                </p><br>
+                <p lang="en">
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </div>
+        </section>
+        <section class="gallery" id="entrevistas">
+            <h2>Invitadas/os estelares</h2>
+            <div class="img-container">
+                <img src="images/grace-hopper.png" title="Grace Hopper" alt="Grace Hopper al lado de una vieja computadora">
+                <img src="images/Katie-Bouman.png" title="Katie Bouman" alt="Katie Bouman abrazando una base de datos">
+                <img src="images/Margaret_Hamilton.png" title="Margaret Hamilton" alt="Margaret Hamilton abrazando una base de datos">
+                <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" title="An E.R.A.Univac 1103 computer in the 1950s" alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" title="Computer operators with an Eniac — the world’s first programmable general-purpose computer" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                <img src="images/susan-kare.png" title="susan-kare" alt="susan-kare tirada en su silla">
+            </div>
+        </section>
+        <section class="topics" id="topicos">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="icons-container">
+                <figure>
+                    <img src="images/icon1.svg" title="Trabajo remoto" alt="trabajo remoto">
+                    <figcaption>Trabajo remoto</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icon2.svg" title="Repensando la programación" alt="Repensando la programación">
+                    <figcaption>Repensando la programación</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icon3.svg" title="Bases del código" alt="Bases del código">
+                    <figcaption>Bases del código</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/icon4.svg" title="Seguridad informática" alt="Seguridad informática">
+                    <figcaption>Seguridad informática</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="novedades">
+            <h2>¿Querés las últimas novedades?</h2>
+            <input onClick="window.location.href='#episodios'" class="btn btn-center" type="button" value="ESCUCHÁ LOS EPISODIOS">
+        </section>
+        <footer>
+            <p>© 2019— Hello blue pale dot </p>
+            <div class="fa-container">
+                <i class="fa fa-spotify"></i>
+                <i class="fa fa-instagram "></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-telegram"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
